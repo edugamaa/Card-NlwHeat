@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduardo Gama</title>
+
+    <!--LINKS-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
+
+    <!--SOURCES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="back">
+    <!-- CONTENTS -->
+    <main>
+      <div class="circle"></div>
+
+      <div class="container">
+        <div class="card">
+          <div class="avatar">
+            <span>
+              <img src="./assets/simbolo.svg" alt="simbolo" />
+            </span>
+            <img src="#" alt="foto" id="userImage" />
+          </div>
+          <h1 id="userName"></h1>
+          <a class="git" id="userLink" href="#" target="_blenk">
+            <img class="git" src="./assets/github.svg" alt="github" />
+            <span id="userLogin"></span>
+          </a>
+          <p id="userBio"></p>
+          <ul>
+            <li class="social">
+              <a
+                target="_blenk"
+                href="https://www.linkedin.com/in/eduardo-henrique-gama-5218b4219/"
+              >
+                <img src="./assets/linkedin.svg" alt="linkedin" />
+              </a>
+            </li>
+            <li class="social">
+              <a target="_blenk" href="https://www.instagram.com/edu_hgama/">
+                <img src="./assets/insta.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="social">
+              <a
+                target="_blenk"
+                href="https://api.whatsapp.com/send?phone=+5547997198740&text=Olá"
+              >
+                <img src="./assets/whats.svg" alt="whatsapp" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- BACKGROUND ANIMATION JS -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll('.card'), {
+        max: 5,
+        speed: 200,
+        glare: true,
+        'max-glare': 0.1
+      })
+    </script>
+
+    <!-- MAIN JS-->
+    <script src="main.js"></script>
+  </body>
+</html>
